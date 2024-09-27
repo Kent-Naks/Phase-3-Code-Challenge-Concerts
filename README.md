@@ -14,6 +14,9 @@
 
 So step 1 completed, now off to installation of needed files.
 
-2. Installing Pipenv.
+2. Installing Pipenv.(pip install pipenv)
 
-3. Installing the dependancies.
+3. Installing the dependancies. (pipenv install)
+
+4. Set up the Database. (pipenv run alembic upgrade head)
+   -- error occcired due to a lack of an alembic.ini file. Now going to create the file. 
