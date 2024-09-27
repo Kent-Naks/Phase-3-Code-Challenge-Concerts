@@ -16,3 +16,4 @@ So step 1 completed, now off to installation of needed files.
 
 2. Installing Pipenv.
 
+3. Installing the dependancies.
