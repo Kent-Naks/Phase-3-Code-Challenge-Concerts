@@ -47,3 +47,12 @@ concert6 = Concert(date="2025-01-05", band=band14, venue=venue6) # King Kaka at 
 concert7 = Concert(date="2025-01-15", band=band4, venue=venue7)  # Nikita Kering' at Mombasa Sports Club
 concert8 = Concert(date="2025-01-20", band=band10, venue=venue8) # Njerae at Bomas of Kenya
 concert9 = Concert(date="2025-02-01", band=band15, venue=venue9) # Eric Wainaina at Uhuru Gardens
+
+# Add everything to the session and commit
+session.add_all([band1, band2, band3, band4, band5, band6, band7, band8, band9, band10, band11,
+                 band12, band13, band14, band15, band16, band17, band18, band19,
+                 venue1, venue2, venue3, venue4, venue5, venue6, venue7, venue8, venue9,
+                 concert1, concert2, concert3, concert4, concert5, concert6, concert7, concert8, concert9])
+session.commit()
+
+print("Database seeded successfully with Kenyan artists and venues!")
