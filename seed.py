@@ -36,3 +36,14 @@ venue6 = Venue(name="KICC Grounds", location="Nairobi")
 venue7 = Venue(name="Mombasa Sports Club", location="Mombasa")
 venue8 = Venue(name="Bomas of Kenya", location="Nairobi")
 venue9 = Venue(name="Uhuru Gardens", location="Nairobi")
+
+# Create sample concerts
+concert1 = Concert(date="2024-12-01", band=band2, venue=venue1)  # Sauti Sol at Nyayo Stadium
+concert2 = Concert(date="2024-12-10", band=band7, venue=venue2)  # Bien at Carnival
+concert3 = Concert(date="2024-12-20", band=band5, venue=venue3)  # Nviiri at Naivasha Ground
+concert4 = Concert(date="2024-12-25", band=band1, venue=venue4)  # Elani at Kasarani Stadium
+concert5 = Concert(date="2024-12-31", band=band18, venue=venue5) # Kagwe Mungai at Ngong Racecourse
+concert6 = Concert(date="2025-01-05", band=band14, venue=venue6) # King Kaka at KICC Grounds
+concert7 = Concert(date="2025-01-15", band=band4, venue=venue7)  # Nikita Kering' at Mombasa Sports Club
+concert8 = Concert(date="2025-01-20", band=band10, venue=venue8) # Njerae at Bomas of Kenya
+concert9 = Concert(date="2025-02-01", band=band15, venue=venue9) # Eric Wainaina at Uhuru Gardens
