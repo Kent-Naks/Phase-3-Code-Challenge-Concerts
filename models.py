@@ -21,3 +21,13 @@ class Band(Base):
     @classmethod
     def most_performances(cls, session):
         return session.query(cls).join(Concert).group_by(cls.id).order_by(func.count(Concert.id).desc()).first()
+
+class Venue(Base):
+    __tablename__ = 'venues'
+    id = Column(Integer, primary_key=True)
+    title = Column(String)
+    city = Column(String)
+    concerts = relationship('Concert', back_populates='venue')
+
+    def bands(self):
+        return [concert.band for concert in self.concerts]
