@@ -40,3 +40,9 @@ class Concert(Base):
     venue_id = Column(Integer, ForeignKey('venues.id'))
     band = relationship('Band', back_populates='concerts')
     venue = relationship('Venue', back_populates='concerts')
+    
+    def hometown_show(self):
+        return self.venue.city == self.band.hometown
+
+    def introduction(self):
+        return f"Hello {self.venue.city}!!!!! We are {self.band.name} and we're from {self.band.hometown}"
