@@ -24,4 +24,6 @@ So step 1 completed, now off to installation of needed files.
 
 5. Seeding the database. (pipenv run python seed.py)
 
-6. 
+6. After adding the necessary information on the seed.py file, I then pipenv shell so as to activate the Pipenv shell then pipenv install sqlalchemy. Lastly its to run the pipenv run python seed.py again to see if the module not found error is still there.
+
+7. Needed to first add intial setup of SQLAlchemy, config data base connection and sessions and define model relationships.
