@@ -20,3 +20,8 @@ So step 1 completed, now off to installation of needed files.
 
 4. Set up the Database. (pipenv run alembic upgrade head)
    -- error occcired due to a lack of an alembic.ini file. Now going to create the file. 
+    -- Succeful.
+
+5. Seeding the database. (pipenv run python seed.py)
+
+6. 
