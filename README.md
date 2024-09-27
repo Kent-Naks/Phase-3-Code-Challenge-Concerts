@@ -34,3 +34,12 @@ So step 1 completed, now off to installation of needed files.
 
 created a config.py. Included config.py to set up the database connection using SQLAlchemy.
 
+FAILED: Directory migrations already
+  exists and is not empty, solution was to create a new migration. 
+  SOLUTION:
+
+  1. "alembic revision --autogenerate -m "Initial migration"
+"
+  2. IndentationError: unexpected indent, fixing indention error on env.py. Error was on line 41.
+  3.Running the migration using "alembic upgrade head". Migration was a success.
+  4. Verifying database changes
