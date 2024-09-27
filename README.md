@@ -31,3 +31,6 @@ So step 1 completed, now off to installation of needed files.
 8. Completed with the 
 
 9. Created the cli.py file. This commit implements a basic CLI for managing bands, venues, and concerts. It introduces functions to list all bands and venues by querying the database and displaying relevant details such as band ID, name, hometown, venue ID, title, and city. A create_concert function is added, which validates band and venue IDs before creating a new concert and saving it to the database. The main function serves as the entry point for the CLI, offering users options to list bands, list venues, create a concert, or exit. It handles user input, provides feedback for invalid options, and ensures the program runs smoothly with error handling for invalid band or venue IDs.
+
+created a config.py. Included config.py to set up the database connection using SQLAlchemy.
+
