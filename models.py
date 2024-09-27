@@ -10,6 +10,7 @@ class Band(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False)
     hometown = Column(String, nullable=False)
+    genre = Column(String, nullable=False)  
     concerts = relationship('Concert', back_populates='band')
 
     def venues(self):

@@ -42,4 +42,6 @@ FAILED: Directory migrations already
 "
   2. IndentationError: unexpected indent, fixing indention error on env.py. Error was on line 41.
   3.Running the migration using "alembic upgrade head". Migration was a success.
-  4. Verifying database changes
+  4. Verifying database changes.
+
+  5 Basically had sooooo maany error. But now bands can be added into the data base.
